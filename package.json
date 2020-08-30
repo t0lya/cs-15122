@@ -1,4 +1,7 @@
 {
   "name": "cs-15122",
-  "private": true
+  "private": true,
+  "engines": {
+    "node": ">=14.9.0"
+  }
 }
