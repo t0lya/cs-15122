@@ -75,3 +75,18 @@ testArrays.map((array) => {
   console.log(array)
   console.log(isSorted(array))
 })
+
+const createTestArray = (maxLength = 99, maxVal = 999) => {
+  const length = Math.floor(Math.random() * maxLength) + 1
+  const array = []
+  for (let index = 0; index < length; index++) {
+    array[index] = Math.floor(Math.random() * maxVal)
+  }
+  return array
+}
+
+for (let index = 0; index < 999; index++) {
+  const testArray = createTestArray()
+  quicksort(testArray)
+  !isSorted(testArray) && console.log('Array not sorted!!!')
+}
