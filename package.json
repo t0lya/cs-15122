@@ -3,5 +3,9 @@
   "private": true,
   "engines": {
     "node": ">=14.9.0"
+  },
+  "type": "module",
+  "devDependencies": {
+    "prettier": "^2.1.1"
   }
 }
